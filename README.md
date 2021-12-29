@@ -1,4 +1,4 @@
-<a href="https://beyonk.com">
+<a href="https://devmrh.com">
     <br />
     <br />
     <img src="https://user-images.githubusercontent.com/218949/144224348-1b3a20d5-d68e-4a7a-b6ac-6946f19f4a86.png" width="198" />
@@ -8,7 +8,7 @@
 
 # RBAC for Sapper
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) [![build-status](https://img.shields.io/github/workflow/status/beyonk-adventures/sapper-rbac/publish)](https://github.com/beyonk-adventures/sapper-rbac/) [![Svelte v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) [![build-status](https://img.shields.io/github/workflow/status/devmrh-adventures/sapper-rbac/publish)](https://github.com/devmrh-adventures/sapper-rbac/) [![Svelte v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
 
 Role-based access control for Sapper. Works on both the server-, and, client-side.
 
@@ -17,7 +17,7 @@ Role-based access control for Sapper. Works on both the server-, and, client-sid
 Install as a dev dependency:
 
 ```bash
-npm install --save-dev @beyonk/sapper-rbac
+npm install --save-dev @devmrh/sapper-rbac
 ```
 
 # Usage
@@ -27,7 +27,7 @@ npm install --save-dev @beyonk/sapper-rbac
 * For Sapper to work, `/client/.*` is automatically unrestricted.
 
 ```js
-import { Router } from '@beyonk/sapper-rbac'
+import { Router } from '@devmrh/sapper-rbac'
 
 const routes = new Router()
   .unrestrict('/login.*')
@@ -42,7 +42,7 @@ export default routes
 ## For the server-side
 
 ```js
-import { guard } from '@beyonk/sapper-rbac'
+import { guard } from '@devmrh/sapper-rbac'
 import routes from './my-routes.js'
 
 const app = polka()
@@ -108,7 +108,7 @@ On the client side, we integrate with the page store in the root `_layout.svelte
 
 ```js
 import routes from './my-routes.js'
-import { guard } from '@beyonk/sapper-rbac'
+import { guard } from '@devmrh/sapper-rbac'
 import { tick } from 'svelte'
 import { stores, goto } from '@sapper/app'
 

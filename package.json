@@ -1,6 +1,6 @@
 {
-  "name": "@beyonk/sapper-rbac",
-  "version": "0.0.3",
+  "name": "@devmrh/sapper-rbac",
+  "version": "0.1.0",
   "description": "Role-based authentication for Sapper",
   "main": "index.js",
   "scripts": {
